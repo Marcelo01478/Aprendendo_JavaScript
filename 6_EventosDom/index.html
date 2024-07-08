@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        #Principal{
+            background-color:chartreuse;
+            text-align: center;
+            padding: 100px;
+            width: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="Principal" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()"> 
+        Essa é minha div
+    </div>
+    <script>
+        function clicar() {
+            Principal.style.background = 'blue'
+            Principal.innerText = 'Clicou'
+            Principal.style.color = 'White'
+        }
+        function entrar() {
+            Principal.style.background = 'black'
+            Principal.innerText = 'Entrei'
+            Principal.style.color = 'white'
+        }
+        function sair() {
+            Principal.style.background = 'yellow'
+            Principal.innerText = 'sair'
+            Principal.style.color = 'red'
+            
+        }
+    </script>
+</body>
+</html>
