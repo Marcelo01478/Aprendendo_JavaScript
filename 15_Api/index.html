@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API - STAR WARS</title>
+</head>
+<body>
+    <script>
+        console.log('API Stars Wars')
+        fetch('https://swapi.dev/api/people/50/')
+        .then(function (response) {
+            return response.json()
+        })
+        .then(function (data) {
+            console.log(data.name)
+            console.log(data.height)
+        })
+    </script>
+</body>
+</html>
